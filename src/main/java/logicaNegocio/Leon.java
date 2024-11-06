@@ -2,14 +2,15 @@ package logicaNegocio;
 
 public class Leon extends Animal{
 
+    TipoHabitat tipoHabitat = TipoHabitat.TERRESTRE;
+
     @Override
-    String emitirSonido() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
+    String emitirSonido(){
+       return "RUGIDO";
+   }
 
     @Override
     String obtenerDieta() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        return "CARNIVORO";
     }
-    
 }
