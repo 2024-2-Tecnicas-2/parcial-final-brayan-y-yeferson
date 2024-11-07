@@ -2,6 +2,16 @@ package logicaNegocio;
 
 public class Perro extends Animal implements Domestico{
     
+    TipoHabitat habitat = TipoHabitat.TERRESTRE;
+
+    public TipoHabitat getHabitat() {
+        return habitat;
+    }
+
+    public void setHabitat(TipoHabitat habitat) {
+        this.habitat = habitat;
+    }
+    
     
 
     public String interactuarConHumano() {
@@ -9,13 +19,13 @@ public class Perro extends Animal implements Domestico{
     }
 
     @Override
-    String emitirSonido() {
+    public String emitirSonido() {
         return "Ladrido";
        
     }
 
     @Override
-    String obtenerDieta() {
+    public String obtenerDieta() {
         return "Omnívoro";
     }
     
