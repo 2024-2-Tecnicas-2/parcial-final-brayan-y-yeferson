@@ -1,5 +1,17 @@
 package logicaNegocio;
 
-public class Delfin {
-    // TODO: Aquí va tu código
+public class Delfin extends Animal{
+    
+    TipoHabitat tipoHabitat = TipoHabitat.ACUATICO;
+    
+    String emitirSonido() {
+        return "Chirrido";
+     
+    }
+
+  
+    String obtenerDieta() {
+        return "Pescado";
+    }
+    
 }
